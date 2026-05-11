@@ -2,29 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #282c34;
-  color: white;
+  padding: 1.5rem 10%;
+  background-color: var(--white);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #61dafb;
-}
+.logo { font-weight: 800; font-size: 1.5rem; letter-spacing: 2px; }
+.logo span { color: #f06292; }
 
-.links {
-  display: flex;
-  list-style: none;
-  gap: 20px;
+.links { display: flex; list-style: none; gap: 2rem; }
+.links a { 
+  text-decoration: none; 
+  color: var(--dark-text); 
+  font-weight: 500;
+  transition: 0.3s;
 }
-
-.links a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.links a:hover {
-  color: #61dafb;
-}
+.links a:hover { color: #f06292; }

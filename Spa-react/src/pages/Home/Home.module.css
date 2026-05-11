@@ -1,0 +1,61 @@
+/* Layout Principal */
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ffffff; /* Fundo branco puro para ser minimalista */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Título Principal (MARE SWIM) */
+.homeContainer h1 {
+  font-family: 'Playfair Display', serif; /* Fonte elegante */
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: 15px; /* Espaçamento luxuoso entre letras */
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0;
+}
+
+/* Dando o toque Rosa Claro apenas no detalhe */
+.homeContainer h1::after {
+  content: " SWIM";
+  font-weight: 300;
+  color: #f8bbd0; /* Rosa pastel sutil */
+}
+
+/* Subtítulo / Descrição */
+.homeContainer p {
+  font-size: 0.9rem;
+  color: #999999;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 15px;
+  margin-bottom: 60px;
+}
+
+/* Grid de Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px; /* Espaço generoso entre os itens */
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 40px;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .homeContainer h1 {
+    font-size: 2rem;
+    letter-spacing: 8px;
+  }
+  
+  .grid {
+    gap: 30px;
+  }
+}

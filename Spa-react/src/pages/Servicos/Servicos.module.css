@@ -1,0 +1,71 @@
+.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 35px;
+  padding: 10px;
+}
+
+.servicoCard {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  box-shadow:
+    0 10px 25px rgba(255, 105, 180, 0.15),
+    0 4px 10px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.servicoCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 8px;
+
+  background: linear-gradient(
+    90deg,
+    #ff69b4,
+    #ff1493,
+    #ffb6c1
+  );
+}
+
+.servicoCard:hover {
+  transform: translateY(-8px) scale(1.02);
+
+  box-shadow:
+    0 15px 35px rgba(255, 20, 147, 0.25),
+    0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.servicoCard h3 {
+  color: #d63384;
+  font-size: 22px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.servicoCard p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.servicoCard::after {
+  content: "🌴";
+  position: absolute;
+  bottom: 15px;
+  right: 18px;
+  font-size: 28px;
+  opacity: 0.15;
+}
