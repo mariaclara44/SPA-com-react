@@ -1,22 +1,10 @@
-import styles from './Extra.module.css';
+import styles from './Footer.module.css';
 
-function Extra() {
+function Footer() {
   return (
-    <section className={styles.equipe}>
-      <h1>Nossa Equipe</h1>
-      <div className={styles.membros}>
-        <div className={styles.membro}>
-          <div className={styles.fotoPlaceholder}>👤</div>
-          <h4>Ana Silva</h4>
-          <p>Diretora de Tecnologia</p>
-        </div>
-        <div className={styles.membro}>
-          <div className={styles.fotoPlaceholder}>👤</div>
-          <h4>Bruno Costa</h4>
-          <p>Professor de React</p>
-        </div>
-      </div>
-    </section>
+    <footer className={styles.footer}>
+      <p>&copy; 2024 TechSchool - Todos os direitos reservados.</p>
+    </footer>
   );
 }
-export default Extra;
+export default Footer;
